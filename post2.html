@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en"> <!--
+-----------------\   --------------\   ----------------\   -----------------\   ----------------\            /-------\            ---------\--\       /----------\   -----------------\
+|               | \  |            | \  |              | \  |               | \  |              | \          /         \           |         \  \     /          | \  |               | \
+|    -----------\ |  |    --------\ |  |    -------   | |  |    -----------\ |  |    ------    | |         /    ---    \          |    |\    \  \   /     /|    | |  |    -----------\ |
+|    |\----------\|  |    | -------\|  |    |\----|   | |  |    |\----------\|  |    |\---|    | |        /    /---\    \         |    | \    \  \ /     / |    | |  |    |\----------\|
+|    |-----------\   |    ||           |    ||    |   | |  |    |-----------\   |    |----|    | |       /    /     \    \        |    | |\    \  /     / /|    | |  |    |-----------\
+|               | \  |    ||           |    ||    |   | |  |               | \  |              | |      /    /-------\    \       |    | | \    \/     / / |    | |  |               | \
+|    -----------\ |  |    ||           |    ||    |   | |  |    -----------\ |  |    |\    \---\ |     /                   \      |    | |  \         / /  |    | |  |    -----------\ |
+|    |\----------\|  |    ||           |    ||    |   | |  |    | \---------\|  |    ||\    \---\|    /    /-----------\    \     |    | |   \       / /   |    | |  |    |\----------\|    
+|    |-----------\   |    |--------\   |    |-----|   | |  |    | |             |    || \    \       /    /\-----------/\    \    |    | |    \-----/-/    |    | |  |    |-----------\
+|               | \  |            | \  |              | |  |    | |             |    ||  \    \     /    / /           \ \    \   |    | |                 |    | |  |               | \
+\---------------\ |  \------------\ |  \--------------\ |  \----\ |             \----\|   \----\   /----/ /             \ \----\  \----\ |                 \----\ |  \---------------\ |        
+ \---------------\|   \------------\|   \--------------\|   \----\|              \----\    \----\  \----\/               \/----/   \----\|                  \----\|   \---------------\| -->
+    <head>
+        <!-- Meta tags yang dibutuhkan -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- End meta tags -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- End Bootstrap-->
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="custom.css">
+        <!-- End Custom CSS -->
+        <!-- Hamburger CSS -->
+        <link rel="stylesheet" href="hamburgers-master/dist/hamburgers.css">
+        <!-- End Hamburger CSS -->
+        <!-- UiKit -->
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <!-- End UiKit -->
+        <!-- Optional Javascript -->
+        <!-- JQuery dulu, kemudian Popper.js, kemudian Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- End Optional Javascript -->
+        <title>Merencanakan rumah ideal yang ekonomis</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <!-- Menu Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="home.html" title="Home"><img src="images/designeer.png" alt="logo designeer"></a>
+            <!-- End Navbar Brand -->
+            <!-- Hamburger button -->
+            <button class="navbar-toggler" type="button">
+               <div class="hamburger hamburger--spin" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation"
+                 uk-toggle="target: .mobile-nav-wrapper">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            </button>
+            <!-- End Hamburger button -->
+            <!-- Desktop Navigation -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">                 
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="style" href="profil.html" title="Profil">P R O F I L</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="style" href="project.html" title="Project">P R O J E C T S</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" id="style" href="servis.html" title="Servis">S E R V I S</a>
+                            <div class="dropdown-content">
+                                <a href="arsitektur.html" title="Arsitektur">JASA DESAIN ARSITEKTUR</a>
+                                <a href="interior.html" title="Interior">JASA DESAIN INTERIOR</a>
+                                <a href="engineering.html" title="Engineering">JASA ENGINEERING</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="style" href="kontak.html" title="Kontak">K O N T A K</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="style" href="blog.html" title="Blog">B L O G</a>
+                    </li>
+               </ul>
+             </div>
+            <!-- End Desktop Navigation -->
+        </nav>
+        <!-- End Menu Navigation -->
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav-wrapper uk-modal-full uk-modal" uk-modal>
+            <ul class="mobile-nav">
+                <li>
+                    <a href="profil.html" title="Profil">PROFIL</a>
+                </li>
+                <li>
+                    <a href="project.html" title="Project">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="servis.html" title="Servis">SERVIS</a>
+                </li>
+                <li>
+                    <a href="kontak.html" title="Kontak">KONTAK</a>
+                </li>
+                <li>
+                    <a href="blog.html" title="Blog">BLOG</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Mobile Navigation -->
+        <!-- Content -->
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-title">
+                    <a class="all" href="blog.html">All Posts</a>
+                </div>
+            </div>
+            <div class="row-post">
+                <div class="col-lg-9">
+                    <div class="post-body">
+                        <div class="post-head">
+                             DESIGNEER ARCHITECT . Jan 22 . 3 min read
+                        </div>
+                        <div class="post-title">
+                            <h2>Merencanakan Rumah Ekonomis</h2>
+                        </div>
+                        <div class="update-post-info">
+                            Updated: Apr 10
+                        </div>
+                        <div class="post-image">
+                            <img src="images/blog-img2.png">
+                        </div>
+                        <div class="post-content">
+                            <p>MERENCANAKAN RUMAH IDEAL YANG EKONOMIS</p>
+                            <p>Halo para pembaca, salam sejahtera bagi kita semua.</p>
+                            <p>Pada kesempatan ini kami akan berbagi tips bagaimana merencanakan rumah ideal yang ekonomis untuk anda
+                            dan keluarga anda Bila anda menginginkan membangun atau merenovasi rumah dengan harga terjangkau, atau
+                            katakanlah rumah murah. Yang anda maksud tidak berarti “murahan” dengan kualitas yang buruk bukan? Ya,
+                            tentu saja. Rumah murah layaknya tidak mengorbankan kualitas minimum sebuah hunian yang akan anda
+                            tinggali serta tumbuh dan berkembang didalamnya. “Bukankah rumah adalah istana keluarga?”</p>
+                            <p>Nah, bagi anda yang akan atau sedang membangun rumah, kami memberikan 5 tips untuk merencanakan rumah
+                            ideal yang ekonomis.</p>
+                            <p>MERENCANAKAN RUMAH IDEAL YANG EKONOMIS :</p>
+                            <p><b>1. MEMBUAT DESAIN</b>
+                            <br />
+                            <br />
+                            Buatlah desain atau perencanaan yang baik dan matang.
+                            <br />Desain yang baik akan selalu mengakomodir fungsi, estetika serta kekuatan konstruksi.
+                            <br />Bangunan yang dibangun tidak dilandasi tiga hal diatas, walaupun dibangun dengan biaya yang murah
+                            akan tetap tidak efisien dikemudian hari.
+                            <br />Sering kali efek dari ketidak tepatan desain dirasakan dalam jangka panjang. Fungsi yang tidak tepat
+                            menjadikan ruang-ruang tidak terpakai secara optimal. Estetika yang tidak baik dapat menurunkan prestis dan nilai investasi.
+                            Sedangkan konstruksi yang tidak baik dapat berakibat lebih fatal.</p>
+                            <p>Jangan lupa memperhatikan sirkulasi udara dan pencahayaan sehingga rumah anda sehat serta nyaman untuk
+                            dihuni. Pencahayaan dan penghawaan yang baik dapat menghemat biaya energi listrik.
+                            <br />Aturlah ruangan dan sirkulasi seefektif dan seefisien mungkin, jangan terlalu banyak membuang ruang
+                            tidak terpakai, serta gunakan teknik mix used (menggabungkan 2 fungsi atau lebih dalam satu ruang) untuk
+                            menghemat tempat.
+                            <br />
+                            Tetap sisihkan sebagian ruang untuk taman dan ruang terbuka.
+                            <br />Buatlah saluran sanitasi dan drainase saluran air kotor dan air hujan yang baik.
+                            <br />Buatlah sistem instalasi air bersih serta kelistrikan yang aman dan baik.
+                            <br />Buatlah desain yang mudah dalam perawatan.
+                            <br />Buatlah bentuk facade bangunan terlihat menarik. Yup. Rumah murah harus tetap menarik iyakan.
+                            <br />Rencanakan seluruh rangkaian diatas dan tuangkan menjadi desain yang dapat diterapkan dengan bantuan arsitek.
+                            </p>
+                            <p><b>2. MENENTUKAN LUAS BANGUNAN</b>
+                            <br />
+                            <br />
+                            Luas bangunan berbanding lurus dengan besarnya biaya konstruksi yang dikeluarkan. Dalam perencanaan rumah
+                            ekonomis, pastikan anda membangun sesuai kebutuhan anda dan keluarga.
+                            <br />
+                            Untuk bangunan ekonomis anda harus sedikit membatasi keinginan anda dengan membangun yang diperlukan saja.
+                            Atau anda dapat mempersiapkanya untuk pengembangan kemudian hari dengan cara mendesain rumah dengan desain
+                            rumah tumbuh.</p>
+                            <p><b>3. MEMILIH BAHAN DAN MATERIAL BANGUNAN YANG BAIK</b>
+                            <br />
+                            <br />
+                            Pemilihan bahan dan material sangat berpengaruh dalam anggaran pembangunan. Pilihlah material yang
+                            direkomendasikan, aman dan sehat.
+                            <br />Kurangi penggunaan kayu. Kayu adalah material eksklusif saat ini. Kayu yang baik memiliki harga yang
+                            cukup mahal. Seiring kemajuan industri, saat ini sudah banyak tersedia material modern pengganti kayu.
+                            Antara lain bahan semen fiber, pvc maupun metal.
+                            <br />Manfaatkan material modern. Saat ini sudah banyak material-material modern yang dapat dipergunakan
+                            dalam konstruksi.
+                            <br />Dalam memilih bahan bangunan yang perlu diingat adalah jangan hanya memilih berdasarkan harga murah saja, tapi anda
+                            harus mempertimbangkan spesifikasi, keawetan serta perawatanya.</p>
+                            <p><b>4. MEMILIH KONTRAKTOR YANG TEPAT</b>
+                            <br />
+                            <br />
+                            Pastikan bangunan dibangun dengan baik oleh kontraktor terpercaya agar tercapai hasil yang optimal dan
+                            tidak mengecewakan. Pilihlah kontraktor yang profesional serta berpengalaman.</p>
+                            <p><b>5. PERSIAPKAN ANGGARAN ANDA</b>
+                            <br />
+                            <br />
+                            Terakhir persiapkan anggaran anda secara matang sebelum memulai konstruksi. Anggaran yang tidak
+                            dipersiapkan dengan baik dapat berpengaruh terhadap kelancaran pembangunan.
+                            <br />
+                            Investasi membangun rumah ideal yang ekonomis pada umumnya tidak dirasakan secara langsung. Namun cepat
+                            atau lambat akan terasa. Bangunan yang direncanakan dengan baik pada akhirnya akan “jauh lebih murah”
+                            dibandingkan dengan rumah yang awalnya murah tapi sering bermasalah. Bangunan yang tidak baik juga akan
+                            memiliki nilai jual rendah atau nilai investasi rendah, dan kami yakin anda tidak mengharapkanya.</p>
+                            <p>Itulah tips bagaimana merencanakan bangunan rumah ideal yang ekonomis. Ikuti kami dalam ulasan-ulasan
+                            menarik berikutnya seputar bangunan dan arsitektur. Semoga dapat menginspirasi anda. Salam. Terimaksih.</p>
+                            <p>Best Regards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-title">
+                </div>
+            </div>
+        </div>
+        <!-- End Content -->
+        <!-- Hamburger Animation -->
+        <script>
+            var $hamburger = $(".hamburger");
+            $hamburger.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            // Do something else, like open/close menu
+             });
+        </script>
+        <!-- End Hamburger Animation -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col">  
+                        <p>Copyright 2018 © DESIGNEER ARCHITECT INDONESIA. All Rights Reserved.</p>
+                </div>
+                <div class="col">
+                    <div class="col-link">
+                        <ul class="social-item">
+                            <li class="item">
+                                <a class="link-instagram" href="#"><img src="images/ig.jpg" alt="logo instagram"></a>
+                            </li>
+                            <li class="item">
+                                <a class="link-youtube" href="#"><img src="images/yt.png" alt="logo youtube"></a>
+                            </li>
+                            <li class="item">
+                                <a class="link-twitter" href="#"><img src="images/twitter.png" alt="logo twitter"></a>
+                            </li>
+                            <li class="item">
+                                <a class="link-facebook" href="#"><img src="images/fb.png" alt="logo facebook"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </body>
+</html>

@@ -1,0 +1,1108 @@
+html, body {
+  height: 100%;
+  font-family: helvetica;
+}
+/* -------------------------------------------------------------Welcome Page---------------------------------------------------------*/
+.welcome-screen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  overflow: hidden;
+}
+.content-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.logo {
+  margin: auto;
+  display: block;
+  width: 300px;
+  height: 60px;
+}
+@media screen and (max-width: 600px) {
+  .logo {
+    margin: auto;
+    display: block;
+    width: 150px;
+    height: 30px;
+  }
+}
+/* ---------------------------------------------------------End Welcome Page---------------------------------------------------------*/
+/* ---------------------------------------------------------------Homepage-----------------------------------------------------------*/
+/* ----------------------------------------------------Homepage Header-----------------------------------------------------*/
+/* ------------------------------------------Desktop Navigation--------------------------------------------------*/
+.navbar-brand {
+  height: 45px;
+  width: 135px;
+}
+@media screen and (max-width: 600px) {
+  .navbar-brand {
+    height: 45px;
+    width: 135px;
+    margin-top: 50px;
+  }
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-nav {
+  margin-top: 30px;
+}
+.navbar-nav li {
+  padding-left: 30px;
+}
+.navbar-nav li a:hover {
+  color: #818181 !important;
+}
+#style {
+  color: #fff;
+  font-family: helvetica;
+  font-size: 8pt;
+  font-weight: bold;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+.dropdown-content a {
+  text-align: center;
+  font-family: helvetica;
+  font-size: 8pt;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  padding: 5px 0 0 0;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a:hover {
+  text-decoration: none;  
+}
+/* ------------------------------------------End Desktop Navigation-----------------------------------------------*/
+/* ------------------------------------------Mobile Navigation--------------------------------------------------*/
+.mobile-nav {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #fff;
+  opacity: 0.9;
+}
+.mobile-nav li {
+  position: relative;
+  top: 25%;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+}
+.mobile-nav li a{
+  color: #818181;
+  font-family: helvetica;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16pt;
+}
+.mobile-nav li a:hover {
+  color: #000;
+}
+/* ------------------------------------------End Mobile Navigation-----------------------------------------------*/
+/* ------------------------------------------------End Homepage Header-----------------------------------------------------*/
+/* ------------------------------------------Homepage Slideshow-----------------------------------------------*/
+.carousel-item {
+  transition-property: opacity;
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.carousel-item, .active.left, .active.right {
+  opacity: 0.9;
+}
+.active, .next.left, .prev.right {
+  opacity: 1;
+}
+.next, .prev, .active.left, .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+/* ------------------------------------------End Homepage Slideshow-------------------------------------------*/
+/* -----------------------------------------------------------End Homepage-----------------------------------------------------------*/
+/* -----------------------------------------------------------Profile Page-----------------------------------------------------------*/
+.col-title {
+  position: relative;
+  top: 80%;
+  margin-left: 25px;
+  color: #fff;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 14pt;
+}
+.col-lg-6 .col-profil {
+  position: relative;
+}
+.profil-title-image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  left: 30%;
+  margin-top: 30px;
+}
+.image-logo {
+  margin-top: 60px;
+}
+.profil-title {
+  color: #fff;
+  font-size: 10pt;
+  font-family: helvetica;
+}
+.title-detail {
+  color: #fff;
+  font-size: 10pt;
+}
+.profil-detail {
+  text-align: justify;
+  color: #fff;
+  font-size: 8pt;
+}
+/* -------------------------------------------------------End Profile Page-----------------------------------------------------------*/
+/* ---------------------------------------------------------Project Page-------------------------------------------------------------*/
+.col-lg-6 {
+  height: 60vh;
+  position: relative;
+  background-color: #000;
+}
+.privat, .publik {
+  position: relative;
+  top: 3%;
+  left: 35%;
+  width: 200px;
+  height: auto;
+}
+.thumb-wrapper, .thumb-wrapper {
+  position: relative;
+  top: 15%;
+  width: auto;
+  height: auto;
+}
+.privat a:hover, .publik a:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+.profil-dl {
+  color: #fff;
+  font-size: 8pt;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.dl-link {
+  text-decoration: underline;
+  color: #fff;
+}
+/* -----------------------------------------------------End Project Page-------------------------------------------------------------*/
+.data-project {
+  color: #fff;
+  font-size: 8pt;
+  position: relative;
+  margin-left: 25px;
+}
+.privat-project-title, .publik-project-title {
+  font-weight: bold;
+}
+.thumbnail {
+  width: auto;
+  height: 50vh;
+  left: 20%;
+  position: absolute;
+}
+.view-project {
+  position: relative;
+  top: 35%;
+  float: right;
+  margin-right: 20px;
+  color: #fff;
+}
+.view-project a {
+  color: #fff;
+  font-size: 10pt;
+}
+.view-project a:hover {
+  text-decoration: none;
+  color: #818181; 
+}
+/*----------------------------------Previous-Next Link------------------------------------------*/
+.next-link {
+  float: right;
+  margin-right: 20px;
+}
+.back-link {
+  float: left;
+  margin-left: 20px;
+}
+.next-btn, .back-btn {
+  color: #818181;
+  padding: 5px;
+  font-family: helvetica;
+}
+.next-btn:hover, .back-btn:hover {
+  text-decoration: none;
+  color: #818181;
+}
+/*----------------------------------End Previous-Next Link--------------------------------------*/
+/*---------------------------------------------Thumbnail Image Grid-----------------------------------------*/
+.col-lg-img-row1 {
+  position: relative;
+  width: 50%;
+  margin: 0;
+  padding: 2px;
+}
+.col-lg-img-row2 {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 2px;
+}
+.col-lg-img-row3 {
+  position: relative;
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*----------------------------------------Zoom Effect--------------------------------------------*/
+.img-hover-zoom {
+  position: relative;
+  overflow: hidden;
+}
+.img-hover-zoom img {
+  transition: transform 1.2s ease;
+}
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+.img-hover-zoom:hover .shr-btn {
+  visibility: visible;
+}
+/*-------------------------------------End Zoom Effect------------------------------------------*/
+/*--------------------------------------Slick Carousel------------------------------------------*/
+.var-width {
+  width: 1000px;
+  height: 80vh;
+  padding: 10px;
+}
+@media screen and (max-width: 600px) {
+  .var-width {
+  width: auto;
+  height: 80vh;
+  margin-top: 15vh;
+  } 
+}
+/*------------------------------Slick Carousel Arrow Custom-------------------------------------*/
+.left-arrow,
+.right-arrow
+{
+    font-size: 24px;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.left-arrow:hover,
+.left-arrow:focus,
+.right-arrow:hover,
+.right-arrow:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.left-arrow:hover:before,
+.left-arrow:focus:before,
+.right-arrow:hover:before,
+.right-arrow:focus:before
+{
+    opacity: 1;
+}
+.left-arrow.slick-disabled:before,
+.right-arrow.slick-disabled:before
+{
+    opacity: 0;
+}
+
+.left-arrow:before,
+.right-arrow:before
+{
+    font-family: 'slick';
+    font-size: 28px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.left-arrow
+{
+    left: -25px;
+}
+[dir='rtl'] .left-arrow
+{
+    right: -25px;
+    left: auto;
+}
+.left-arrow:before
+{
+    content: ' \276E';
+}
+[dir='rtl'] .left-arrow:before
+{
+    content: ' \276F';
+}
+
+.right-arrow
+{
+    right: -25px;
+}
+[dir='rtl'] .right-arrow
+{
+    right: auto;
+    left: -25px;
+}
+.right-arrow:before
+{
+    content: ' \276F';
+}
+[dir='rtl'] .right-arrow:before
+{
+    content: ' \276E';
+}
+@media screen and (max-width: 600px) {
+  .left-arrow,
+  .right-arrow
+  {
+      font-size: 24px;
+      line-height: 0;
+
+      position: absolute;
+      top: 50%;
+
+      display: block;
+
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+
+      cursor: pointer;
+
+      color: transparent;
+      border: none;
+      outline: none;
+      background: transparent;
+  }
+  .left-arrow:hover,
+  .left-arrow:focus,
+  .right-arrow:hover,
+  .right-arrow:focus
+  {
+      color: transparent;
+      outline: none;
+      background: transparent;
+  }
+  .left-arrow:hover:before,
+  .left-arrow:focus:before,
+  .right-arrow:hover:before,
+  .right-arrow:focus:before
+  {
+      opacity: 1;
+  }
+  .left-arrow.slick-disabled:before,
+  .right-arrow.slick-disabled:before
+  {
+      opacity: 0;
+  }
+
+  .left-arrow:before,
+  .right-arrow:before
+  {
+      font-family: 'slick';
+      font-size: 28px;
+      line-height: 1;
+
+      opacity: .75;
+      color: white;
+  
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+
+  .left-arrow
+  {
+      left: -20px;
+  }
+  [dir='rtl'] .left-arrow
+  {
+      right: -20px;
+      left: auto;
+  }
+  .left-arrow:before
+  {
+      content: ' \276E';
+  }
+  [dir='rtl'] .left-arrow:before
+  {
+      content: ' \276F';
+  }
+  
+  .right-arrow
+  {
+      right: -20px;
+  }
+  [dir='rtl'] .right-arrow
+  {
+      right: auto;
+      left: -20px;
+  }
+  .right-arrow:before
+  {
+      content: ' \276F';
+  }
+  [dir='rtl'] .right-arrow:before
+  {
+      content: ' \276E';
+  }  
+}
+/*------------------------------End Slick Carousel Arrow Custom---------------------------------*/
+/*--------------------------------------End Slick Carousel--------------------------------------*/
+/*-------------------------------------Thumbnail Close Button-----------------------------------*/
+.cls-btn {
+  position: absolute;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-family: helvetica;
+  font-size: 11pt;
+  cursor: pointer;  
+}
+.cls-btn:focus {
+  outline: 0;
+}
+/*-------------------------------------Thumbnail Close Button----------------------------------*/
+/*-----------------------------------------End Thumbnail Image Grid-----------------------------------------*/
+/*-----------------------------------------Type 1 Project Detail-----------------------------------------*/
+.type1-img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.mayang-detail, .yu-detail {
+  margin: auto;
+  display: block;
+  width: 1000px;
+  height: 500px;
+}
+/*-----------------------------------------End Type 1 Project Detail-------------------------------------*/
+/*-----------------------------------------Type 2 Project Detail-----------------------------------------*/
+.type2-img-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.babarsari-detail {
+  margin: auto;
+  display: block;
+  width: 500px;
+  height: 500px;
+}
+/*-----------------------------------------End Type 2 Project Detail-------------------------------------*/
+
+.maguwo-detail {
+  margin: auto;
+  display: block;
+  width: 768px;
+  height: 512px;
+}
+/*-------------------------------------Lightbox Modal Project Detail-------------------------------------*/
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.modal-dialog {
+  position: fixed;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+.modal-lg {
+  max-width: 100% !important;
+}
+.modal-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+.col-sm-12 {
+  position: relative;
+}
+#upper-bar {
+  width: 100%;
+  height: 12vh;
+}
+/*-------------------------------------------Lightbox Modal Button---------------------------------------*/
+.expand-btn, .share-btn {
+  position: relative;
+  margin: 0;
+  padding: 20px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+.close-btn {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.arrow-btn-left, .arrow-btn-right {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 40%;
+  margin: 10px;
+  padding: 0;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.arrow-btn-left {
+  left: 0;
+}
+.arrow-btn-right {
+  right: 0;
+}
+.share-opt {
+  display: none;
+}
+.share-btn:hover .share-opt {
+  display: inline-block;
+}
+.project-social-share {
+  margin: 0px 10px 10px 10px;  
+}
+.project-social-share li {
+  height: 20px;
+  width: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  list-style-type: none;
+  position: relative;  
+}
+.share-wrap {
+  position: absolute;
+  width: 100%;
+  top: 35%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shr-opt {
+  position: relative;
+  display: none;
+}
+.expand-btn:focus, .share-btn:focus, .close-btn:focus, .arrow-btn-left:focus, .arrow-btn-right:focus {
+  outline: 0;  
+}
+.type1-shrink-btn, .type1-esc-btn, .type2-shrink-btn, .type2-esc-btn {
+	width: 5vw;
+	height: 5vw;
+	background-color: rgba(0, 0, 0, 1);
+	vertical-align: middle;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	color: #ffffff;
+	font-size: 2vw;
+	position: absolute;
+	top: 5%;
+  visibility: hidden;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-family: helvetica, arial, sans-serif;
+	opacity: 0;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+.active .hover > .type1-shrink-btn {
+  opacity: 1.0;
+}
+.active .hover > .type1-esc-btn {
+  opacity: 1.0;
+}
+.type1-shrink-btn {
+  left: 1vw;
+}
+.type1-esc-btn {
+  right: 1vw;
+}
+.active .hover > .type2-shrink-btn {
+  opacity: 1.0;
+}
+.active .hover > .type2-esc-btn {
+  opacity: 1.0;
+}
+.type2-shrink-btn {
+  left: 1vw;
+}
+.type2-esc-btn {
+  right: 1vw;
+}
+.type1-btn-left, .type1-btn-right, .type2-btn-left, .type2-btn-right {
+  width: 5vw;
+	height: 5vw;
+	background-color: rgba(0, 0, 0, 1);
+	vertical-align: middle;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	color: #ffffff;
+	font-size: 3vw;
+	position: absolute;
+	top: 50%;
+  visibility: hidden;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-family: helvetica, arial, sans-serif;
+	opacity: 0;
+	-webkit-transition: opacity 1s;
+	transition: opacity 1s;
+}
+.active .hover > .type1-btn-left {
+  opacity: 1.0;
+}
+.active .hover > .type1-btn-right {
+  opacity: 1.0;
+}
+.type1-btn-left {
+  left: 1vw;
+}
+.type1-btn-right {
+  right: 1vw;
+}
+.active .hover > .type2-btn-left {
+  opacity: 1.0;
+}
+.active .hover > .type2-btn-right {
+  opacity: 1.0;
+}
+.type2-btn-left {
+  left: 1vw;
+}
+.type2-btn-right {
+  right: 1vw;
+}
+.type1-shrink-btn:focus, .type1-esc-btn:focus, .type1-btn-left:focus, .type1-btn-right:focus, .type2-shrink-btn:focus,
+.type2-esc-btn:focus, .type2-btn-left:focus, .type2-btn-right:focus {
+  outline: 0;
+}
+/*-----------------------------------------End Lightbox Modal Button-------------------------------------*/
+/*------------------------------------End Lightbox Modal Project Detail----------------------------------*/
+/*-----------------------------------------------Fullscreen----------------------------------------------*/
+#type1-full-image:fullscreen .type1-img-wrap {
+  height: 100%;
+}
+#type1-full-image:fullscreen .mayang-detail {
+  width: 100%;
+  height: 100vh;
+}
+#type1-full-image:fullscreen .yu-detail {
+  width: 100%;
+  height: 100vh;
+}
+#type1-full-image:fullscreen .type1-shrink-btn {
+  visibility: visible;
+}
+#type1-full-image:fullscreen .type1-esc-btn {
+  visibility: visible;
+}
+#type1-full-image:fullscreen .type1-btn-left {
+  visibility: visible;
+}
+#type1-full-image:fullscreen .type1-btn-right {
+  visibility: visible;
+}
+#type2-full-image:fullscreen .type2-img-wrap {
+  height: 100%;
+}
+#type2-full-image:fullscreen .babarsari-detail {
+  width: 50%;
+  height: 100vh;
+}
+#type2-full-image:fullscreen .type2-shrink-btn {
+  visibility: visible;
+}
+#type2-full-image:fullscreen .type2-esc-btn {
+  visibility: visible;
+}
+#type2-full-image:fullscreen .type2-btn-left {
+  visibility: visible;
+}
+#type2-full-image:fullscreen .type2-btn-right {
+  visibility: visible;
+}
+#type2-full-image:fullscreen .maguwo-detail {
+  width: 100%;
+  height: 100vh;
+}
+/*---------------------------------------------End Fullscreen--------------------------------------------*/
+/*-------------------------------------------Mobile Media Screen-----------------------------------------*/
+@media screen and (max-width: 600px) {
+  .mayang-detail, .yu-detail {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .babarsari-detail {
+    margin: auto;
+    display: block;
+    width: 50%;
+    height: 50%;
+  }
+  .maguwo-detail {
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;  
+  }
+  .modal-body {
+    position: relative;
+    top: 20%;
+  } 
+}
+/*-----------------------------------------End Mobile Media Screen---------------------------------------*/
+/* -------------------------------------------------End Privat Project Page----------------------------------------------------------*/
+/* -----------------------------------------------------Servis Page------------------------------------------------------------------*/
+.col-lg-4 {
+  height: 60vh;
+  position: relative;
+  background-color: #000;
+}
+#text-link {
+  position: relative;
+  top: 50%;
+  text-align: center;
+}
+.arsitektur, .interior, .engineering {
+  position: relative;
+  top: 7.5%;
+}
+.arsitektur a {
+  width: auto;
+  height: 50vh;
+  background-image: linear-gradient(to bottom, black, white);
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: italic;
+}
+.interior a {
+  width: auto;
+  height: 50vh;
+  background-color: #818181;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: italic;
+}
+.engineering a {
+  width: auto;
+  height: 50vh;
+  background-color: #ffa500;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  font-family: helvetica;
+  font-weight: bold;
+  font-style: italic;
+}
+.arsitektur a:hover, .interior a:hover, .engineering a:hover {
+  background-image: linear-gradient(to bottom, white, white);
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+/* ------------------------------------Jasa Arsitektur, Interior, Engineering Page-----------------------------------------*/
+.col-lg-6 .col-servis {
+  position: relative;
+}
+.servis-image {
+  position: relative;
+  background-color: #fff;
+}
+.image-private {
+  margin-top: 0;
+}
+.page-inner-servis {
+  position: relative;
+  margin-left: 25px;
+  padding: 5px;
+}
+.servis-title {
+  color: #fff;
+  font-size: 10pt;
+}
+.servis-title-detail {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 10pt;
+}
+.servis-detail {
+  text-align: justify;
+  color: #fff;
+  font-size: 8pt;
+}
+.servis-detail a {
+  color: #fff;
+  text-decoration: underline;
+}
+/* ----------------------------------End Jasa Arsitektur, Interior, Engineering Page---------------------------------------*/
+/* -----------------------------------------------------End Servis Page--------------------------------------------------------------*/
+/* -----------------------------------------------------Kontak Page------------------------------------------------------------------*/
+.col-lg-12 {
+  height: 60vh;
+  position: relative;
+  background-color: #000;
+}
+.col-lg-12 .col-kontak {
+  position: relative;
+}
+.kontak-detail {
+  color: #fff;
+  font-size: 8pt;
+}
+.kontak-detail a {
+  color: #fff;
+  text-decoration: underline;
+}
+.kontak-detail a:hover {
+  color: #fff;
+}
+/* -------------------------------------------------End Kontak Page------------------------------------------------------------------*/
+/* -----------------------------------------------------Blog Page--------------------------------------------------------------------*/
+.col-lg-upper {
+  height: 10vh;
+  width: 100%;
+  position: relative;
+  background-color: #000;
+}
+.all-post {
+  position: relative;
+  top: 50%;
+  color: #fff;
+  margin-left: 20px;
+  font-family: helvetica;
+}
+.all-post:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.row-img {
+  height: 40vh;
+}
+.row-head {
+  height: 15vh;
+}
+.row-title {
+  height: 5vh;
+}
+.blog-img {
+  width: 100%;
+  height: 40vh;
+}
+.blog-header {
+  position: relative;
+  display: flex;
+  top: 20%;
+  font-family: helvetica;
+  font-size: 10pt;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.blog-title {
+  position: relative;
+  display: flex;
+  font-family: helvetica;
+  font-size: 12pt;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.blog-title-link {
+  color: #fff;
+}
+.blog-title-link:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.all {
+  position: relative;
+  top: 70%;
+  color: #fff;
+  margin-left: 10px;
+  font-family: helvetica;
+  font-size: 12pt;
+}
+.all:hover {
+  text-decoration: none;
+  color: #fff;  
+}
+.row-post {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-lg-9 {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.post-body {
+  position: relative;
+  padding: 20px 40px 20px 40px;
+  margin: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #C0C0C0;  
+}
+.post-head {
+  font-family: helvetica;
+  font-size: 10pt;
+  margin-bottom: 50px;
+}
+.update-post-info {
+  font-family: helvetica;
+  font-size: 10pt;
+  margin-bottom: 50px;
+}
+.post-content {
+  font-family: helvetica;
+  text-align: justify;
+  font-size: 11pt;
+}
+/* ---------------------------------------------------End Blog Page------------------------------------------------------------------*/
+/* --------------------------------------------------------Footer--------------------------------------------------------------------*/
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+}
+.col p {
+  margin: 20px 0px 0px 20px;
+  font-size: 6.5pt;
+  color: #818181;
+  font-family: helvetica;
+}
+.col-link {
+  float: right;
+}
+.social-item {
+  margin: 0px 10px 10px 10px;
+}
+.social-item li {
+  height: 10px;
+  width: 10px;
+  margin: 10px;
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+}
+/* ----------------------------------------------------End Footer--------------------------------------------------------------------*/
+/* --------------------------------------------------Global Class--------------------------------------------------------------------*/
+.col-lg-title {
+  height: 20vh;
+  width: 100%;
+  position: relative;
+  top: 15%;
+  background-color: #000;
+}
+.page-inner {
+  position: relative;
+  margin: 25px;
+  padding: 5px;
+}
+.col-lg-row3 {
+  height: 20vh;
+  width: 100%;
+  position: relative;
+  top: 80%;
+  background-color: #000;
+}
+/* ----------------------------------------------------End Global Class--------------------------------------------------------------*/
+

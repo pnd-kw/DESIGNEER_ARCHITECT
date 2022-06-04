@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en"> <!--
+-----------------\   --------------\   ----------------\   -----------------\   ----------------\            /-------\            ---------\--\       /----------\   -----------------\
+|               | \  |            | \  |              | \  |               | \  |              | \          /         \           |         \  \     /          | \  |               | \
+|    -----------\ |  |    --------\ |  |    -------   | |  |    -----------\ |  |    ------    | |         /    ---    \          |    |\    \  \   /     /|    | |  |    -----------\ |
+|    |\----------\|  |    | -------\|  |    |\----|   | |  |    |\----------\|  |    |\---|    | |        /    /---\    \         |    | \    \  \ /     / |    | |  |    |\----------\|
+|    |-----------\   |    ||           |    ||    |   | |  |    |-----------\   |    |----|    | |       /    /     \    \        |    | |\    \  /     / /|    | |  |    |-----------\
+|               | \  |    ||           |    ||    |   | |  |               | \  |              | |      /    /-------\    \       |    | | \    \/     / / |    | |  |               | \
+|    -----------\ |  |    ||           |    ||    |   | |  |    -----------\ |  |    |\    \---\ |     /                   \      |    | |  \         / /  |    | |  |    -----------\ |
+|    |\----------\|  |    ||           |    ||    |   | |  |    | \---------\|  |    ||\    \---\|    /    /-----------\    \     |    | |   \       / /   |    | |  |    |\----------\|    
+|    |-----------\   |    |--------\   |    |-----|   | |  |    | |             |    || \    \       /    /\-----------/\    \    |    | |    \-----/-/    |    | |  |    |-----------\
+|               | \  |            | \  |              | |  |    | |             |    ||  \    \     /    / /           \ \    \   |    | |                 |    | |  |               | \
+\---------------\ |  \------------\ |  \--------------\ |  \----\ |             \----\|   \----\   /----/ /             \ \----\  \----\ |                 \----\ |  \---------------\ |        
+ \---------------\|   \------------\|   \--------------\|   \----\|              \----\    \----\  \----\/               \/----/   \----\|                  \----\|   \---------------\| -->
+    <head>
+        <!-- Meta tags yang dibutuhkan -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- End meta tags -->
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- End Bootstrap-->
+        <!-- Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="custom.css">
+        <!-- End Custom CSS -->
+        <!-- Hamburger CSS -->
+        <link rel="stylesheet" href="hamburgers-master/dist/hamburgers.css">
+        <!-- End Hamburger CSS -->
+        <!-- UiKit -->
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <!-- End UiKit -->
+        <!-- Slick -->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <!-- End Slick -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="fontawesome-free-5.10.1-web/css/all.css">
+        <!-- Optional Javascript -->
+        <!-- JQuery dulu, kemudian Popper.js, kemudian Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- End Optional Javascript -->
+        <title>PUBLIK PROJECTS</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <!-- Menu Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <!-- Navbar Brand -->
+            <a class="navbar-brand" href="home.html" title="Home"><img src="images/designeer.png"></a>
+            <!-- End Navbar Brand -->
+            <!-- Hamburger button -->
+            <button class="navbar-toggler" type="button">
+               <div class="hamburger hamburger--spin" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation"
+                 uk-toggle="target: .mobile-nav-wrapper">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </div>
+            </button>
+            <!-- End Hamburger button -->
+            <!-- Desktop Navigation -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">                 
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="style" href="profil.html" title="Profil">P R O F I L</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="style" href="project.html" title="Project">P R O J E C T S</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="nav-link" id="style" href="servis.html" title="Servis">S E R V I S</a>
+                            <div class="dropdown-content">
+                                <a href="arsitektur.html" title="Arsitektur">JASA DESAIN ARSITEKTUR</a>
+                                <a href="interior.html" title="Interior">JASA DESAIN INTERIOR</a>
+                                <a href="engineering.html" title="Engineering">JASA ENGINEERING</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="style" href="kontak.html" title="Kontak">K O N T A K</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="style" href="blog.html" title="Blog">B L O G</a>
+                    </li>
+               </ul>
+             </div>
+            <!-- End Desktop Navigation -->
+        </nav>
+        <!-- End Menu Navigation -->
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav-wrapper uk-modal-full uk-modal" uk-modal>
+            <ul class="mobile-nav">
+                <li>
+                    <a href="profil.html" title="Profil">PROFIL</a>
+                </li>
+                <li>
+                    <a href="project.html" title="Project">PROJECTS</a>
+                </li>
+                <li>
+                    <a href="servis.html" title="Servis">SERVIS</a>
+                </li>
+                <li>
+                    <a href="kontak.html" title="Kontak">KONTAK</a>
+                </li>
+                <li>
+                    <a href="blog.html" title="Blog">BLOG</a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Mobile Navigation -->
+        <!-- Content -->
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-title">
+                    <h4 class="col-title">PUBLIK</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="thumb-wrapper">
+                        <img class="thumbnail" src="images/jacuzzi.png">
+                        <div class="data-project">
+                            <p class="publik-project-title">JACUZZI SHOWROOM, YOGYAKARTA.</p>
+                            <p>DATA PROYEK
+                            <br />
+                            <br />
+                            Jenis Bangunan  : Showroom Jacuzzi
+                            <br />
+                            Lokasi : Parangtritis, Yogyakarta.
+                            <br />
+                            Luas Lahan  : 425,25 m2
+                            <br />
+                            Luas Lantai  : 317 m2
+                            <br />
+                            Jumlah Lantai  : 2
+                            </p>
+                        </div>
+                    </div>
+                    <div class="view-project">
+                        <a href="#type1-publik-modal" uk-toggle>View Project</a> &emsp;
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="thumb-wrapper">
+                        <img class="thumbnail" src="images/gracia.png">
+                        <div class="data-project">
+                            <p class="publik-project-title">GRACIA KOS, YOGYAKARTA.</p>
+                            <p>DATA PROYEK
+                            <br />
+                            <br />
+                            Jenis Bangunan  : Rumah Kos
+                            <br />
+                            Lokasi : Demangan, Yogyakarta.
+                            <br />
+                            Luas Lahan  : 726 m2
+                            <br />
+                            Luas Lantai  : 403 m2
+                            <br />
+                            Jumlah Lantai  : 2
+                        </div>
+                    </div>
+                    <div class="view-project">
+                        <a href="#">View Project</a> &emsp;
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>        
+            <div class="row">
+                <div class="col-lg-row3">
+                    <div class="next-link">
+                        <a class="next-btn" href="publik-page-2.html">Next</a>
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Publik Project 1 -->
+        <div id="type1-publik-modal" uk-modal>
+            <div class="uk-background-secondary uk-margin-auto-vertical">
+                <div class="variable-width">
+                    <div class="img-hover-zoom">
+                        <a data-toggle="modal" href="#type1-publik-modal-detail"><img class="var-width" src="images/jacuzzi1.jpg"></a>
+                    </div>
+                    <div class="img-hover-zoom">
+                        <a data-toggle="modal" href="#type1-publik-modal-detail"><img class="var-width" src="images/jacuzzi2.jpg"></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-img-row3">
+                        <button class="cls-btn uk-modal-close" type="button">close</button>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="modal fade" id="type1-publik-modal-detail" tabindex="-1" role="dialog" aria-labelledby="type1PublikModalDetail" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12" id="upper-bar">
+                                    <button type="button" class="expand-btn" id="type1-toggle-full"><i class="fa fa-expand" aria-hidden="true"></i></button>
+                                    <button class="share-btn" type="button">
+                                        <i class="fas fa-share"></i>
+                                    </button>
+                                    <div class="share-opt">
+                                            <ul class="social-item">
+                                                <li class="item">
+                                                    <a class="link-instagram" href="#"><img src="images/ig.jpg"></a>
+                                                </li>
+                                                <li class="item">
+                                                    <a class="link-youtube" href="#"><img src="images/mailwhite.png"></a>
+                                                </li>
+                                                <li class="item">
+                                                    <a class="link-twitter" href="#"><img src="images/twitter.png"></a>
+                                                </li>
+                                                <li class="item">
+                                                    <a class="link-facebook" href="#"><img src="images/fb.png"></a>
+                                                </li>
+                                            </ul>
+                                    </div>
+                                    <button type="button" class="close-btn" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div id="type1-full-image">
+                                        <div class="type1-fading-btn" onmousemove="activate()">
+                                            <div class="hover">
+                                                <button type="button" class="type1-shrink-btn" id="type1-esc-full"><i class="fas fa-compress" aria-hidden="true"></i></button>
+                                                <button type="button" class="type1-esc-btn" id="type1-esc-all" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>    
+                                                <div class="type1-img-wrap">
+                                                    <img class="mayang-detail" src="images/jacuzzi1.jpg">   
+                                                </div>
+                                                <div class="type1-img-wrap">
+                                                    <img class="mayang-detail" src="images/jacuzzi2.jpg">   
+                                                </div>
+                                                <button class="type1-btn-left" onclick="plusDivs(-1)">&#10094;</button>
+                                                <button class="type1-btn-right" onclick="plusDivs(+1)">&#10095;</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="arrow-btn-left" onclick="plusDivs(-1)">&#10094;</button>
+                                    <button class="arrow-btn-right" onclick="plusDivs(+1)">&#10095;</button>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Publik Project 1 -->
+        <!-- End Content -->
+        <!-- Custom Javascript -->
+        <!-- Hamburger Animation -->
+        <script>
+            var $hamburger = $(".hamburger");
+            $hamburger.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            // Do something else, like open/close menu
+             });
+        </script>
+        <!-- End Hamburger Animation -->
+        <!-- Manual Slider -->
+        <script>
+            var slideIndex = 1;
+            var sldIndex =1
+            showDivs(slideIndex);
+            shwDivs(sldIndex);
+            
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+            
+            function addDivs(n) {
+                shwDivs(sldIndex += n);
+            }
+            
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("type1-img-wrap");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length};
+                for (i = 0; i < x.length; i++){
+                    x[i].style.display = "none";
+                }
+                x[slideIndex-1].style.display = "block";
+            }
+            
+            function shwDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("type1-img-full");
+                if (n > x.length) {sldIndex = 1}
+                if (n < 1) {sldIndex = x.length};
+                for (i = 0; i < x.length; i++){
+                    x[i].style.display = "none";
+                }
+                x[sldIndex-1].style.display = "block";
+            }
+        </script>
+        <!-- End Manual Slider -->
+        <!-- Fullscreen -->
+        <script>
+            (function () {
+                var viewFullScreen = document.getElementById("type1-toggle-full");
+                if (viewFullScreen) {
+                    viewFullScreen.addEventListener("click", function() {
+                        var docElm = document.getElementById("type1-full-image");
+                        if (docElm.requestFullscreen) {
+                            docElm.requestFullscreen();
+                        } else if (docElm.msRequestFullscreen) {
+                            docElm.msRequestFullscreen();
+                        } else if (docElm.mozRequestFullScreen) {
+                            docElm.mozRequestFullScreen();
+                        } else if (docElm.webkitRequestFullScreen) {
+                            docElm.webkitRequestFullScreen();
+                        }
+                    }, false);
+                }
+                
+                var cancelFullScreen = document.getElementById("type1-esc-full");
+                if (cancelFullScreen) {
+                    cancelFullScreen.addEventListener("click", function() {
+                        if (document.exitFullscreen) {
+                            document.exitFullscreen();
+                        } else if (document.msExitFullscreen) {
+                            document.msExitFullscreen();
+                        } else if (document.mozCancelFullScreen) {
+                            document.mozCancelFullScreen();
+                        } else if (document.webkitCancelFullScreen) {
+                            document.webkitCancelFullScreen();
+                        }
+                    }, false);
+                }
+                
+                var exitFullScreen = document.getElementById("type1-esc-all");
+                if (exitFullScreen) {
+                    exitFullScreen.addEventListener("click", function() {
+                        if (document.exitFullscreen) {
+                            document.exitFullscreen();
+                        } else if (document.msExitFullscreen) {
+                            document.msExitFullscreen();
+                        } else if (document.mozCancelFullScreen) {
+                            document.mozCancelFullScreen();
+                        } else if (document.webkitCancelFullScreen) {
+                            document.webkitCancelFullScreen();
+                        }
+                    }, false);
+                }
+                
+            })();
+        </script>
+        <script>
+            (function () {
+                var viewFullScreen = document.getElementById("type2-toggle-full");
+                if (viewFullScreen) {
+                    viewFullScreen.addEventListener("click", function() {
+                        var docElm = document.getElementById("type2-full-image");
+                        if (docElm.requestFullscreen) {
+                            docElm.requestFullscreen();
+                        } else if (docElm.msRequestFullscreen) {
+                            docElm.msRequestFullscreen();
+                        } else if (docElm.mozRequestFullScreen) {
+                            docElm.mozRequestFullScreen();
+                        } else if (docElm.webkitRequestFullScreen) {
+                            docElm.webkitRequestFullScreen();
+                        }
+                    }, false);
+                }
+                
+                var cancelFullScreen = document.getElementById("type2-esc-full");
+                if (cancelFullScreen) {
+                    cancelFullScreen.addEventListener("click", function() {
+                        if (document.exitFullscreen) {
+                            document.exitFullscreen();
+                        } else if (document.msExitFullscreen) {
+                            document.msExitFullscreen();
+                        } else if (document.mozCancelFullScreen) {
+                            document.mozCancelFullScreen();
+                        } else if (document.webkitCancelFullScreen) {
+                            document.webkitCancelFullScreen();
+                        }
+                    }, false);
+                }
+                
+                var exitFullScreen = document.getElementById("type2-esc-all");
+                if (exitFullScreen) {
+                    exitFullScreen.addEventListener("click", function() {
+                        if (document.exitFullscreen) {
+                            document.exitFullscreen();
+                        } else if (document.msExitFullscreen) {
+                            document.msExitFullscreen();
+                        } else if (document.mozCancelFullScreen) {
+                            document.mozCancelFullScreen();
+                        } else if (document.webkitCancelFullScreen) {
+                            document.webkitCancelFullScreen();
+                        }
+                    }, false);
+                }
+                
+            })();
+        </script>
+        <!-- End Fullscreen -->
+        <!-- Fullscreen Button Fading Effect -->
+        <script>
+            let deactivate = debounce(function() {
+                document.querySelector('.type1-fading-btn').classList.remove('active');
+                document.querySelector('.type2-fading-btn').classList.remove('active');
+            }),
+            activate = function() {
+                document.querySelector('.type1-fading-btn').classList.add('active');
+                document.querySelector('.type2-fading-btn').classList.add('active');
+                deactivate();
+            }
+            
+            function debounce(func, wait = 5000) {
+                let timeout;
+                return function(...args) {
+                    clearTimeout(timeout);
+                    timeout = setTimeout(() => {
+                        func.apply(this, args);
+                    }, wait);
+                };
+            }
+        </script>
+        <!-- End Fullscreen Button Fading Effect -->
+        <!-- Slick Variable Width Slider -->
+        <script>
+            $(document).ready(function(){
+            $('.variable-width').slick({
+                dots: true,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: true,
+                prevArrow: '<button type="button" class="left-arrow">&#10094;</button>',
+                nextArrow: '<button type="button" class="right-arrow">&#10095;</button>'
+            });
+        });
+        </script>
+        <!-- End Slick Variable Width Slider -->
+        <!-- Slick Resource -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <!-- End Slick Resource -->
+        <!-- End Custom Javascript -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col">  
+                        <p>Copyright 2018 © DESIGNEER ARCHITECT INDONESIA. All Rights Reserved.</p>
+                </div>
+                <div class="col">
+                    <div class="col-link">
+                        <ul class="social-item">
+                            <li class="item">
+                                <a class="link-instagram" href="#"><img src="images/ig.jpg" alt="logo instagram"></a>
+                            </li>
+                            <li class="item">
+                                <a class="link-youtube" href="#"><img src="images/yt.png" alt="logo youtube"></a>
+                            </li>
+                            <li class="item">
+                                <a class="link-twitter" href="#"><img src="images/twitter.png" alt="logo twitter"></a>
+                            </li>
+                            <li class="item">
+                                <a class="link-facebook" href="#"><img src="images/fb.png" alt="logo facebook"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </body>
+</html>
